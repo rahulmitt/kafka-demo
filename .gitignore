@@ -1,0 +1,7 @@
+# Project exclude paths
+.idea/
+*.iml
+/domain/target/
+/kafka-connector/target/
+/kafka-consumer/target/
+/kafka-producer/target/

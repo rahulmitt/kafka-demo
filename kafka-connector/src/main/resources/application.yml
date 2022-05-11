@@ -1,0 +1,22 @@
+server:
+  port: 8083
+
+spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;IGNORECASE=TRUE;
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: admin
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+
+logging:
+  level:
+    org.springframework: info
